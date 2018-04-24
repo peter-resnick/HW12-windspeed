@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<!-- CSS Stylesheets with Relative Paths -->
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8">
+  <title>PJR HW06 - Main Page</title>
+
+  <!-- This line is money! It points your HTML to the CSS file. -->
+  <!-- Notice the "relative" pathway? It matches a file inside our current directory's "assets" folder. Open it to see our style rules. -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
+</head>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<body>
+<!--    <div>
+        <p> <!-- probably use colspan
+           use the bootstrap `navbar` for header on each page,
+            use bootstrap table for data page
+            use bootstrap grid for responsiveness
+            Name of site - must be on left - needs to anchor to main page
+            Needs to be dropdown menu on the right named "Plots" which links to each Page
+            two additional links to comparisons and data pages
+            must use media queries/be responsive
+        </p> 
+    -->
+    </div>
+    <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="https://peter-resnick.github.io/HW12/">Weather Analysis</a>
+              </div>
+          
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                  <!--<li class="active"><a href="MAKE THIS A USEFUL LINK">Comparisons <span class="sr-only">(current)</span></a></li>-->
+                  <li><a href="https://peter-resnick.github.io/HW12/HW-12-comparisons">Comparisons</a></li>
+                  <li><a href="https://peter-resnick.github.io/HW12/HW-12-data">Data</a></li>
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="https://peter-resnick.github.io/HW12/HW-12-temp">Temperature</a></li>
+                        <li><a href="https://peter-resnick.github.io/HW12/HW-12-humidity">Humidity</a></li>
+                        <li><a href="https://peter-resnick.github.io/HW12/HW-12-cloudy">Cloudiness</a></li>
+                        <!--<li role="separator" class="divider"></li>-->
+                        <li><a href="https://peter-resnick.github.io/HW12/HW-12-windspeed">Windspeed</a></li>
+                    <!--</ul>
+                  </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                  <li><a href="#">Link</a></li>
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="useful link">Temperature</a></li>
+                      <li><a href="useful link">Humidity</a></li>
+                      <li><a href="useful link">Cloudiness</a></li>
+                      <!--<li role="separator" class="divider"></li>
+                      <li><a href="useful link">Windspeed</a></li>-->
+                    </ul>
+                  </li>
+                </ul>
+              </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+          </nav>
+          <div class = "container" >
+                <div class = "row">
+                      <div class ="col-md-7">
+                          <div class = "row">
+                              <h1 class = "text-center">
+                                  Latitude vs Wind Speed
+                              </h1>
+                          </div>
+                          <div class = "row">
+                                <img src="file:\\\C:\Users\Peter\Desktop\git\NUCHI201801DATA4-Class-Repository-DATA\MWS\Homework\06-Python-APIs\Instructions\WindsVsLat.png" alt="Temperature vs Latitude Scatter Plot" class="img-responsive center-block">
+                          </div>
+                          <br>
+                          <br>
+                          <div class ="row">
+                              <p>
+                                  Wind Speed did not seem to have a very strong correlation to city latitudes. Generally, the highest winds were seen in the northern hemishpere, but not a significant amount more than in the south. Wind Speeds tended to stay lower throughout the cities examined, with an expectedly lower amount of cities experiencing very high (>20 mph) winds
+                              </p>
+                          </div>
+                      </div>
+                      <div class = "col-md-1">
+
+                      </div>
+                      <div class ="col-md-3">
+                          <div class = "row">
+                              <h1>
+                                  Visualizations
+                              </h1>
+                          </div>
+                          <div>
+                                <div class = "row">
+                                        <div class="col-md-12">
+                                            <div class = "row">
+                                                <p>
+                                                    Temperature vs Latitude
+                                                </p>
+                                            </div>
+                                            <div class = "row">
+                                                <a target="_blank" href="file:\\\C:\Users\Peter\Desktop\git\NUCHI201801DATA4-Class-Repository-DATA\MWS\Homework\12-Web\temp.html">
+                                                    <img src="file:\\\C:\Users\Peter\Desktop\git\NUCHI201801DATA4-Class-Repository-DATA\MWS\Homework\06-Python-APIs\Instructions\TempVsLat.png" alt="Temperature vs Latitude Scatter Plot" class="img-responsive">
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <div class="col-md-12">
+                                            <div class = "row">
+                                                <p>
+                                                    Cloudiness vs Latitude
+                                                </p>
+                                            </div>
+                                            <div class = "row">
+                                                <a target="_blank" href="file:\\\C:\Users\Peter\Desktop\git\NUCHI201801DATA4-Class-Repository-DATA\MWS\Homework\12-Web\cloudy.html">
+                                                    <img src="file:\\\C:\Users\Peter\Desktop\git\NUCHI201801DATA4-Class-Repository-DATA\MWS\Homework\06-Python-APIs\Instructions\CloudsVsLat.png" alt="Cloudiness vs Latitude Scatter Plot" class="img-responsive">
+                                            </div>
+                                        </div>
+                                        <br>
+                                    </div>
+                                    <div class = "row">
+                                        <div class="col-md-12">
+                                            <div class = "row">
+                                                <p>
+                                                    Humidity vs Latitude
+                                                </p>
+                                            </div>
+                                            <div class = "row">
+                                                <a target="_blank" href="file:\\\C:\Users\Peter\Desktop\git\NUCHI201801DATA4-Class-Repository-DATA\MWS\Homework\12-Web\humidity.html">
+                                                    <img src="file:\\\C:\Users\Peter\Desktop\git\NUCHI201801DATA4-Class-Repository-DATA\MWS\Homework\06-Python-APIs\Instructions\HumVsLat.png" alt="Humidity vs Latitude Scatter Plot" class="img-responsive">
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <div class="col-md-12"  style="border:2px solid red">
+                                            <div class = "row">
+                                                <p>
+                                                    Wind Speed vs Latitude
+                                                </p>
+                                            </div>
+                                            <div class = "row">
+                                                <a target="_blank" href="file:\\\C:\Users\Peter\Desktop\git\NUCHI201801DATA4-Class-Repository-DATA\MWS\Homework\12-Web\windspeed.html">
+                                                    <img src="file:\\\C:\Users\Peter\Desktop\git\NUCHI201801DATA4-Class-Repository-DATA\MWS\Homework\06-Python-APIs\Instructions\WindsVsLat.png" alt="Wind Speed vs Latitude Scatter Plot" class="img-responsive">
+                                            </div>
+                                        </div>
+                                    </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+          <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+        </body>
+        </html>
